@@ -1,6 +1,6 @@
 FROM oven/bun:debian
 
-RUN         apt update -y && apt upgrade -y && apt install wget ffmpeg iproute2 git sqlite python3 python3-dev ca-certificates dnsutils tzdata zip tar curl build-base libtool iputils
+RUN         apt update -y && apt upgrade -y && apt install wget ffmpeg iproute2 git python3 python3-dev ca-certificates dnsutils tzdata zip tar curl libtool
 
 RUN         bun init
 RUN         bun upgrade
