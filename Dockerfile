@@ -1,8 +1,8 @@
-FROM ubuntu:20.04
+FROM oven/bun:debian
 
 RUN         apt update && apt add wget ffmpeg iproute2 git sqlite python3 python3-dev ca-certificates dnsutils tzdata zip tar curl build-base libtool iputils
 
-
+RUN         bun init
 RUN         bun upgrade
 RUN         bun install
 
