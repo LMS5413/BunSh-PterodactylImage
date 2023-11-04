@@ -1,6 +1,6 @@
-FROM nwylynko/bun:0.2.0-alpine
+FROM ubuntu:20.04
 
-RUN         apk update && apk add wget ffmpeg iproute2 git sqlite python3 python3-dev ca-certificates dnsutils tzdata zip tar curl build-base libtool iputils
+RUN         apt update && apt add wget ffmpeg iproute2 git sqlite python3 python3-dev ca-certificates dnsutils tzdata zip tar curl build-base libtool iputils
 
 
 RUN         bun upgrade
